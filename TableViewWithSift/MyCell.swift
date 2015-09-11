@@ -11,13 +11,14 @@ import UIKit
 
 class MyCell: UITableViewCell {
     
-    @IBOutlet var cellMyImage: UIImageView
-    @IBOutlet var cellMyCity: UILabel
-    @IBOutlet var cellMyCountry: UILabel
-    
-    init(style: UITableViewCellStyle, reuseIdentifier: String!) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-    }
+    @IBOutlet var cellMyImage: UIImageView?
+    @IBOutlet var cellMyCity: UILabel?
+    @IBOutlet var cellMyCountry: UILabel?
+//    
+//    override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
+//        super.init(style: style, reuseIdentifier: reuseIdentifier)
+//    }
+//
     
     override func awakeFromNib() {
         super.awakeFromNib()
